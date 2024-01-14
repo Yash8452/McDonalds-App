@@ -65,6 +65,11 @@ export const OrderProvider = ({ children }) => {
     setCartItems(filteredCart)
   }
  
+  const resetOrder = () => {
+    setOrderType('');
+    setCartItems([]);
+  };
+
 
   const contextValues = {
     orderType,
@@ -76,6 +81,7 @@ export const OrderProvider = ({ children }) => {
     removeFromCart,
     increaseQuantity,
     decreaseQuantity,
+    resetOrder,
   };
 
   return (

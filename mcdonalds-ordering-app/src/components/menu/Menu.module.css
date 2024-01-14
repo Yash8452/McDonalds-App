@@ -26,6 +26,8 @@
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
 }
 .menuContainer {
+  
+  background-color: #ffc72c;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,11 +54,13 @@
   margin-top: -25px;
 }
 .menuList {
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .menuCard {
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,6 +108,16 @@
   background-color: #ffc72c;
   border-color: whitesmoke;
   color: #333;
+}
+
+.count {
+  background-color: #da291c;
+  color: whitesmoke;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  padding-top: 3px;
+  border-radius: 20rem;
 }
 
 /* ===================== */

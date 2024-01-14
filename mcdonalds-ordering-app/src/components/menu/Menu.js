@@ -1,5 +1,5 @@
 
-import React, {useState } from 'react';
+import React, { useState } from 'react';
 import classes from './Menu.module.css'
 
 import BigMac from '../../assests/meals/BigMac.jpg'
@@ -22,32 +22,39 @@ import Cart from '../cart/Cart';
 
 
 const Menu = () => {
-    const { orderType, addToCart } = useOrderContext();
+    const { orderType, addToCart, cartItems } = useOrderContext();
     const [showCart, setShowCart] = useState(false);
     const [menuWidth, setMenuWidth] = useState('100%');
 
     const handleCartButtonClick = () => {
-        
+
         setMenuWidth(menuWidth === '100%' ? '80%' : '100%');
 
         setShowCart(!showCart);
-        
+
     };
+    const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
 
     const renderCartToggleButton = () => {
         return (
             <>
                 {orderType && (
                     <div className={classes['cartbtn']}>
-                        <button onClick={handleCartButtonClick}> 
-                     {!showCart ?  <MaterialIcon icon="fastfood"/> : "X"}
+                        <p className={classes['count']}>{totalItems}</p>
+                        <button onClick={handleCartButtonClick}>
+                        
+                            {!showCart ? <MaterialIcon icon="fastfood" /> : "X"}
+                                
                         </button>
+                        
                     </div >
                 )}
             </>
 
         );
     };
+
+
 
 
     const menuItems = [

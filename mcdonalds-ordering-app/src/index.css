@@ -7,6 +7,8 @@
 }
 body {
   color: #333;
+  background: #FFC72C;
+  background: radial-gradient(ellipse farthest-side at bottom left, #FFC72C 58%, #FFFFFF 70%);
 }
 main {
   display: flex;
