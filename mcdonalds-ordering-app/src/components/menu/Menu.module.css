@@ -32,6 +32,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 12rem;
 }
 .main-title {
   margin-top: 6rem;
@@ -54,6 +55,7 @@
   margin-top: -25px;
 }
 .menuList {
+  padding-top: 6rem;
   background-color: white;
   display: flex;
   flex-wrap: wrap;

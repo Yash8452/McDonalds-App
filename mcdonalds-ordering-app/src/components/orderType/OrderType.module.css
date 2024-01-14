@@ -21,7 +21,7 @@
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
-  height: 90vh;
+  height: 95vh;
 
   background: #FFC72C;
   background: radial-gradient(ellipse farthest-side at bottom left, #FFC72C 58%, #FFFFFF 70%);
