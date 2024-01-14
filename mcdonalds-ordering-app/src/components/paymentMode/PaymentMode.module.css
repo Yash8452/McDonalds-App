@@ -1,0 +1,46 @@
+     /* yellow - #FFC72C
+     red  - #DA291C */
+.payment {
+  background-color: #264f36;
+  margin-top: 1rem;
+  width: 100%;
+  height: 95vh;
+  position: fixed;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-method {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.paymentOption {
+
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+  border-radius: 14px;
+  border: 1px solid whitesmoke;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: larger;
+  color: whitesmoke;
+
+}
+.paymentOption:hover{
+    background-color:#FFC72C ;
+    color: #333;
+    border: none;
+}

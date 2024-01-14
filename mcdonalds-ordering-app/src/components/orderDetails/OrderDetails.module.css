@@ -1,0 +1,91 @@
+.base {
+  text-align: center;
+  position: fixed;
+
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #ffc72c;
+  clip-path: ellipse(54% 70% at 0% 100%);
+  width: 100%;
+  height: 95vh;
+}
+.order {
+  position: fixed;
+  z-index: 5;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.orderDetails {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 34%;
+  height: 60vh;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  background-color: white;
+}
+.orderDetails ul {
+  text-decoration: none;
+  list-style: none;
+}
+.orderDetails li {
+  border-top: 0.5px solid #c2c2c299;
+  font-size: large;
+  padding: 1rem;
+}
+.orderDetails p {
+  padding: 1rem;
+  border-top: 0.5px solid #c2c2c299;
+  border-bottom: 0.5px solid #c2c2c299;
+  margin-bottom: 1rem;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  margin-top: 4rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.btn-one,
+.btn-two {
+  font-size: 15px !important;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+  border-radius: 14px;
+  border: 1px solid whitesmoke;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: larger;
+  color: #333;
+}
+
+.btn-one:hover {
+  background-color: #264f36;
+  color: whitesmoke;
+  border: none;
+}
+.btn-two:hover {
+  color: whitesmoke;
+  background-color: #da291c;
+  border: none;
+}

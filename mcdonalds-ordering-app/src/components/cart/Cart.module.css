@@ -1,0 +1,120 @@
+/* yellow - #FFC72C
+     red  - #DA291C */
+.cartContainer {
+  
+  margin-top: 6rem;
+  margin-right: 5rem;
+  width: 20%;
+  height: 76vh;
+  color: #333;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease-out; /* Add transition property */
+  transform: translateX(20%); /* Initial position outside the viewport */
+}
+.cartTop {
+  padding-bottom: 8px;
+  border-bottom: 0.5px solid #c2c2c299;
+}
+.cartTop h1 {
+  font-size: 18px;
+}
+.cartContainer ul {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 70%;
+  overflow-y: auto;
+}
+
+.cartContainer li {
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #9999;
+  transition: background-color 0.3s;
+}
+
+.cartMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.cartItem {
+  display: flex;
+  flex-direction: column;
+}
+.cartItem-title {
+  font-size: large;
+}
+.cartItem img {
+  width: 4rem;
+  height: 4rem;
+}
+.cartItem-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dec,
+.add,
+.remove {
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 10rem;
+  margin: 8px;
+}
+.dec:hover {
+  background-color: #333;
+  color: whitesmoke;
+}
+.add:hover {
+  background-color: #ffc72c;
+  color: #333;
+}
+.remove:hover {
+  background-color: #da291c;
+  color: whitesmoke;
+}
+.cartItem-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 5rem;
+  border: none;
+  margin: 5px;
+}
+.cartBottom {
+  padding-top: 14px;
+  border-top: 0.5px solid #c2c2c299;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cartItem-title {
+  color: #333;
+  font-weight: 400;
+}
+.payment-btn {
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  border-radius: 20rem;
+  background-color: #ffc72c;
+}
+.payment-btn:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}

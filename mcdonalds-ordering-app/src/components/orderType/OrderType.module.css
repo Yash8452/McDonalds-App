@@ -1,0 +1,69 @@
+
+     /* yellow - #FFC72C
+     red  - #DA291C */
+
+
+     /* .base {
+        text-align: center;
+        position: fixed;
+      
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #ffc72c;
+        clip-path: ellipse(54% 70% at 0% 100%);
+        width: 100%;
+        height: 95vh;
+      }   */
+.order{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    height: 90vh;
+}
+.order p{
+    
+    font-size: x-large;
+    z-index: 1;
+}
+.order-img{
+    margin: auto;
+    max-width: 100%;
+    height: 20vh;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    background-blend-mode: multiply;
+}
+.order-container{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order-type{
+    width:8rem ;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    background-color: white;
+    color: #333 !important;
+    margin-bottom:1rem;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.order-type:hover{
+    background-color: #DA291C ;
+    border-color: #DA291C;
+    color: whitesmoke !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
